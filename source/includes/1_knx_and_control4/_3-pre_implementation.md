@@ -17,6 +17,6 @@ It is important to note that this release of KNX support is targeted to early ad
 
 This document is intended to outline the steps required to use the delivered device drivers to support KNX certified dimmers, switches and keypads within a Control4 system. It assumes that the KNX devices are already configured with the appropriate Group Address values.
 
-Note that all examples provides in this document are based off a KNX device Configuration using ETS3.
+Note that all examples provides in this document are based off a KNX device Configuration using ETS5.
 
 [1]:	[http://www.knx.org]
