@@ -19,4 +19,4 @@ Through the Online Driver Database, Control4 has made available four drivers to 
 - Network Driver: knx\_network.c4i
 
 In addition to these, a KNX Network driver is also available in the Online Driver Database. It is named: knx\_network.c4i. 
-The network driver in conjunction with any/all of the device drivers listed above will allow you to use the KNX protocol to control keypads, dimmers and switches within the Control4 environment.
+The network driver in conjunction with any or all of the device drivers listed above will allow you to use the KNX protocol to control keypads, dimmers and switches within the Control4 environment.
