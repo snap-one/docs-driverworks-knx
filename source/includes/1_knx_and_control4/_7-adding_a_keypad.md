@@ -1,6 +1,6 @@
 ## Adding a Keypad
 
-Open Composer Pro and find the driver under the Items area. Click on the Search tab and select Online. Search for "KNX Keypad" using Manufacturer of “KNX” and you will see the Keypad driver.
+Open ComposerPro and find the driver under the Items area. Click on the Search tab and select Online. Search for "KNX Keypad" using Manufacturer of “KNX” and you will see the Keypad driver.
 
 <img src="images/1_7-01.png"/>
 
@@ -59,14 +59,14 @@ The following table outlines the Mode to use based on the value received from KN
 | Toggle | X | X |  |
 | Value (1 Byte ) |  |  | X |
 
-### Control bindings
+### Control Bindings
 
-KNX Keypad driver has available BUTTON\_LINK, RELAY and CONTACT\_SENSOR connections for each button as way of controlling other devices in the Control4 system. These connections are dynamically created depending on the number of buttons and their modes.
+KNX Keypad driver has available BUTTON_LINK, RELAY and CONTACT_SENSOR connections for each button as way of controlling other devices in the Control4 system. These connections are dynamically created depending on the number of buttons and their modes.
 
-As an example, we will use a KNX button to toggle a ligthing scene using the BUTTON\_LINK connection. KNX button is configured to send On (1) value on press and Off (0) value on release. Corresponding button mode in the driver for this configuration is "Press/Release (On/Off)".
+As an example, we will use a KNX button to toggle a lighting scene using the BUTTON_LINK connection. The KNX button is configured to send On (1) value on a press and Off (0) value on a release. Corresponding button mode in the driver for this configuration is "Press/Release (On/Off)".
 
 <img src="images/1_7-03.png"/>
 
-After configuring the button 1 in the Properties page, navigate to Connections page and click on the KNX Keypad device. BUTTON\_LINK connection will become available for this button. Connect it to a Toggle Button Link of a lighting scene. Now, every time a customer holds the button, the scene will ramp in the opposite direction.
+After configuring the button 1 in the Properties page, navigate to Connections page and click on the KNX Keypad device. BUTTON_LINK connection will become available for this button. Connect it to a Toggle Button Link of a lighting scene. Now, every time a customer holds the button, the scene will ramp in the opposite direction.
 
 <img src="images/1_7-04.png"/>
