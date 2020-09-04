@@ -9,9 +9,9 @@ Once the driver is added, it is configured under the Lua Properties tab. When al
 **Configuring the KNX Generic Driver**
 Once the Generic Driver has been added to your project you can open the driver’s properties page. This page is where all of the driver configuration will take place. The Properties page supports the configuration of up to eight control “Channels”. The driver defaults to having all eight available channels disabled. A channel is enabled by selecting its Data Point Type. Each channel has (at a minimum) the following fields:
 
-**Channel # Name:** This field allows to provide a name or a description of the Channel.
+**Channel # Name:** This field allows you to provide a name or a description of the Channel.
 
-**Channel # Data Point Type** This field supports the assignment of the desired KNX Data Point Type (DPT) value. DPTs currently supported include all DPTs listed in the [API and Datapoint Types Guide](https://control4.github.io/docs-driverworks-draft/#datapoint-type-overview).
+**Channel # Data Point Type** This field supports the assignment of the desired KNX Data Point Type (DPT) value. DPTs currently supported include all DPTs listed in the [API and Datapoint Types Guide][1].
 
 **Channel # Address** – This field contains the device’s KNX group address.
 
@@ -49,7 +49,7 @@ The Actions tab default to displaying all eight Channel configurations. By click
 **Composer Programming and the KNX Generic Driver**
 One of the main purposes behind providing the KNX Generic driver is to support control of a device without having to write a dedicated driver for that device. Using the programming capabilities found in ComposerPro, we can trigger control scenarios based on four KNX based events. These events are:
 
-**Matching Data Received** – This event occurs when the value that is assigned to a specific channel is received from the KNX network. For example, we configured Channel 1 with a value of 1. When a 1 is received from the KNX network for this channel, this event can be used for programming purposes.
+**Matching Data Received** – This event occurs when the value that is assigned to a specific channel is received from the KNX network. For example, we configure Channel 1 with a value of 1. When a 1 is received from the KNX network for this channel, this event can be used for programming purposes.
 
 **Data Sent to KNX** – This event occurs when the data value for a channel is sent to the KNX network from this driver. For example, when executing a "Send Channel X Value" action.
 
@@ -59,7 +59,7 @@ One of the main purposes behind providing the KNX Generic driver is to support c
 
 Programming events are available when you click on programming in ComposerPro for the KNX Generic Driver.
 
-Let’s consider some simple programming scenarios based events available to use along with the way we have configured the KNX Generic Driver. In our first example, we have created programming to raise out blinds up when Channel 1 is activated. It will pass a value of 1 to the KNX network and, through programming, cause our blinds to raise:
+Let’s consider some simple programming scenarios based on events we can use with the way we have configured the KNX Generic Driver. In our first example, we have created programming to raise our blinds up when Channel 1 is activated. It will pass a value of 1 to the KNX network and, through programming, cause our blinds to raise:
 
 <img src="images/1_8-09.png"/>
 
@@ -75,14 +75,16 @@ Since we have configured our generic Driver with some scheduling related Data po
 
 
 **Using Variables with the KNX Generic Driver**
-If you open the KNX Generic Driver under Programming, you will see all of the variables that are currently available for KNX. By default, Programming populates all of the available variables for a channel. It also provides these variables for a complete set of eight channels. For example, the variables available for Channel_1 include:
+If you open the KNX Generic Driver under Programming, you will see all of the variables that are currently available for KNX. By default, Programming populates all of the available variables for a channel. It also provides these variables for a complete set of eight channels. For example, the variables available for Channel\_1 include:
 
 <img src="images/1_8-12.png"/>
 
-Note that while all variables are displayed, only variables applicable to the Data Point Type configured for the channel under the Properties page will support programming. For example, the CHANNEL_1_STEP variable for Channel 1 will not work if DPT_1 is configured. 
+Note that while all variables are displayed, only variables applicable to the Data Point Type configured for the channel under the Properties page will support programming. For example, the CHANNEL\_1\_STEP variable for Channel 1 will not work if DPT\_1 is configured. 
 
-Through the use of variable, it is possible to base programming off sending data to KNX, receiving data from KNX and receiving matching data from KNX. For example, the screen shot below shows variable-based programming when data is sent through Channel 1 of our KNX Generic Driver. Based on the information in the previous section, Channel 1 uses DPT_1 which in turn, supports passing values 0 & 1 to KNX.
+Through the use of variable, it is possible to base programming off sending data to KNX, receiving data from KNX and receiving matching data from KNX. For example, the screen shot below shows variable-based programming when data is sent through Channel 1 of our KNX Generic Driver. Based on the information in the previous section, Channel 1 uses DPT\_1 which in turn, supports passing values 0 & 1 to KNX.
 
 <img src="images/1_8-13.png"/>
 
 In the example above, when data is sent to KNX through Channel 1 we will toggle Light 3 in the Theater Room through the use of a Command. It is worth noting that when using variable based programming in conjunction with the “Data Received from KNX” generic event the value that will be used by the variable is that actual value received from KNX as opposed to the value configured for the channel in the Properties page. Conditionals and Loops are also available as programming options.
+
+[1]:	https://control4.github.io/docs-driverworks-draft/#datapoint-type-overview
