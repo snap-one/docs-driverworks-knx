@@ -5,5 +5,4 @@
 [1]: https://control4.github.io/docs-driverworks-knx/#introduction/##KNX_Support_Overview
 
 # docs-driverworks-knx
-KNX doc repository
 This repository will contain the KNX driver deveopment content which is deliverd in conjunction with the DriverWorks SDK.
