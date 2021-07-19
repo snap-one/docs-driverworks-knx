@@ -34,4 +34,4 @@ In addition to these, drivers for communication with the KNX system are also ava
 
 These network drivers in conjunction with any/all of the device drivers listed above will allow you to use the KNX protocol to control keypads, dimmers and switches within the Control4 environment.
 
-Control4 recommends the usage of the KNX Routing Gateway driver. The KNX Network driver uses the KNXnet/IP Tunneling protocol which, due to its strict timing requirements for the Control4 system, causes occasional disconnection between Control4 and the KNX system. KNX Routing Gateway driver eliminates this issue by using the KNXnet/IP Routing connection-less multicast protocol, which is more robust compared to the Tunneling protocol.
+Control4 recommends the usage of the KNX Routing Gateway driver. This driver uses the KNXnet/IP Tunneling protocol which, due to its strict timing requirements for the Control4 system, causes occasional disconnection between Control4 and the KNX system. KNX Routing Gateway driver eliminates this issue by using the KNXnet/IP Routing connection-less multicast protocol, which is more robust compared to the Tunneling protocol.
