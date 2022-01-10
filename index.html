@@ -1,0 +1,1872 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Driverworks Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen-0a7c4629.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-c427a123.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;lua&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-3056e635.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="lua">lua</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#knx-and-control4" class="toc-h1 toc-link" data-title="KNX and Control4">KNX and Control4</a>
+          </li>
+          <li>
+            <a href="#license-copyright-and-trademark" class="toc-h1 toc-link" data-title="License, Copyright, and Trademark">License, Copyright, and Trademark</a>
+          </li>
+          <li>
+            <a href="#knx-support-overview" class="toc-h1 toc-link" data-title="KNX Support Overview">KNX Support Overview</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#pre-implementation-considerations" class="toc-h2 toc-link" data-title="Pre-Implementation Considerations">Pre-Implementation Considerations</a>
+                  </li>
+                  <li>
+                    <a href="#adding-the-knx-routing-gateway-driver" class="toc-h2 toc-link" data-title="Adding the KNX Routing Gateway Driver">Adding the KNX Routing Gateway Driver</a>
+                  </li>
+                  <li>
+                    <a href="#adding-the-knx-network-driver" class="toc-h2 toc-link" data-title="Adding the KNX Network Driver">Adding the KNX Network Driver</a>
+                  </li>
+                  <li>
+                    <a href="#linking-c4-devices-to-knx-device-group-objects" class="toc-h2 toc-link" data-title="Linking C4 Devices to KNX Device Group Objects">Linking C4 Devices to KNX Device Group Objects</a>
+                  </li>
+                  <li>
+                    <a href="#adding-a-dimmer" class="toc-h2 toc-link" data-title="Adding a Dimmer">Adding a Dimmer</a>
+                  </li>
+                  <li>
+                    <a href="#adding-a-keypad" class="toc-h2 toc-link" data-title="Adding a Keypad">Adding a Keypad</a>
+                  </li>
+                  <li>
+                    <a href="#adding-the-knx-generic-driver" class="toc-h2 toc-link" data-title="Adding the KNX Generic Driver">Adding the KNX Generic Driver</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-and-datapoint-types" class="toc-h1 toc-link" data-title="API and Datapoint Types">API and Datapoint Types</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#introduction-to-knx-driver-development" class="toc-h2 toc-link" data-title="Introduction to KNX Driver Development">Introduction to KNX Driver Development</a>
+                  </li>
+                  <li>
+                    <a href="#the-role-of-sendtoproxy" class="toc-h2 toc-link" data-title="The Role of SendToProxy">The Role of SendToProxy</a>
+                  </li>
+                  <li>
+                    <a href="#add_group_item" class="toc-h2 toc-link" data-title="ADD_GROUP_ITEM">ADD_GROUP_ITEM</a>
+                  </li>
+                  <li>
+                    <a href="#clear_group_item" class="toc-h2 toc-link" data-title="CLEAR_GROUP_ITEM">CLEAR_GROUP_ITEM</a>
+                  </li>
+                  <li>
+                    <a href="#data_from_knx" class="toc-h2 toc-link" data-title="DATA_FROM_KNX">DATA_FROM_KNX</a>
+                  </li>
+                  <li>
+                    <a href="#get_network_version" class="toc-h2 toc-link" data-title="GET_NETWORK_VERSION">GET_NETWORK_VERSION</a>
+                  </li>
+                  <li>
+                    <a href="#knx_read_request" class="toc-h2 toc-link" data-title="KNX_READ_REQUEST">KNX_READ_REQUEST</a>
+                  </li>
+                  <li>
+                    <a href="#remove_group_item" class="toc-h2 toc-link" data-title="REMOVE_GROUP_ITEM">REMOVE_GROUP_ITEM</a>
+                  </li>
+                  <li>
+                    <a href="#request_status" class="toc-h2 toc-link" data-title="REQUEST_STATUS">REQUEST_STATUS</a>
+                  </li>
+                  <li>
+                    <a href="#send_to_knx" class="toc-h2 toc-link" data-title="SEND_TO_KNX">SEND_TO_KNX</a>
+                  </li>
+                  <li>
+                    <a href="#update_group_item" class="toc-h2 toc-link" data-title="UPDATE_GROUP_ITEM">UPDATE_GROUP_ITEM</a>
+                  </li>
+                  <li>
+                    <a href="#knx-datapoint-type-overview" class="toc-h2 toc-link" data-title="KNX Datapoint Type Overview">KNX Datapoint Type Overview</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_1" class="toc-h2 toc-link" data-title="DPT_1">DPT_1</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_2" class="toc-h2 toc-link" data-title="DPT_2">DPT_2</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_3" class="toc-h2 toc-link" data-title="DPT_3">DPT_3</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_4" class="toc-h2 toc-link" data-title="DPT_4">DPT_4</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_5" class="toc-h2 toc-link" data-title="DPT_5">DPT_5</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_6" class="toc-h2 toc-link" data-title="DPT_6">DPT_6</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_7" class="toc-h2 toc-link" data-title="DPT_7">DPT_7</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_8" class="toc-h2 toc-link" data-title="DPT_8">DPT_8</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_9" class="toc-h2 toc-link" data-title="DPT_9">DPT_9</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_10" class="toc-h2 toc-link" data-title="DPT_10">DPT_10</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_11" class="toc-h2 toc-link" data-title="DPT_11">DPT_11</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_12" class="toc-h2 toc-link" data-title="DPT_12">DPT_12</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_13" class="toc-h2 toc-link" data-title="DPT_13">DPT_13</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_14" class="toc-h2 toc-link" data-title="DPT_14">DPT_14</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_15" class="toc-h2 toc-link" data-title="DPT_15">DPT_15</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_16" class="toc-h2 toc-link" data-title="DPT_16">DPT_16</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_17" class="toc-h2 toc-link" data-title="DPT_17">DPT_17</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_18" class="toc-h2 toc-link" data-title="DPT_18">DPT_18</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_19" class="toc-h2 toc-link" data-title="DPT_19">DPT_19</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_5_001" class="toc-h2 toc-link" data-title="DPT_5_001">DPT_5_001</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_232" class="toc-h2 toc-link" data-title="DPT_232">DPT_232</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_242_600" class="toc-h2 toc-link" data-title="DPT_242_600">DPT_242_600</a>
+                  </li>
+                  <li>
+                    <a href="#dpt_251_600" class="toc-h2 toc-link" data-title="DPT_251_600">DPT_251_600</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='knx-and-control4'>KNX and Control4</h1>
+
+<h1 id='license-copyright-and-trademark'>License, Copyright, and Trademark</h1>
+
+<p>The content contained in this repository is the intellectual property of Snap One, LLC, (formerly known as Wirepath Home Systems, LLC), and use without a valid license from Snap One is strictly prohibited. The user of this repository shall keep all content contained herein confidential and shall protect this content in whole or in part from disclosure to any and all third parties except as specifically authorized in writing by Snap One.</p>
+
+<p><strong>License and Intellectual Property Disclaimer</strong></p>
+
+<p>The content in this repository is provided in connection with Snap One products. No license, express or implied, by estoppal or otherwise, to any intellectual property rights is granted by this document or in this repository. Except as provided in Snap Oneʼs terms and conditions for the license of such products, Snap One and its affiliates assume no liability whatsoever and disclaim any express or implied warranty, relating to the sale and/or use of Snap One products including liability or warranties relating to fitness for a particular purpose, merchantability, or infringement of any patent, copyright or other intellectual property right. Snap One products are not intended for use in medical, lifesaving, or life sustaining applications.</p>
+
+<p>Information regarding third-party products is provided solely for educational purposes. Snap One is not responsible for the performance or support of third-party products and does not make any representations or warranties whatsoever regarding the quality, reliability, functionality or compatibility of these products. The reader is advised that third parties can have intellectual property rights that can be relevant to this repository and the technologies discussed herein, and is advised to seek the advice of competent legal counsel regarding the intellectual property rights of third parties, without obligation of Snap One.</p>
+
+<p>Snap One retains the right to make changes to this repository or related product specifications and descriptions in this repository, at any time, without notice. Snap One makes no warranty for the use of this repository and assumes no responsibility for any errors that can appear in the repository nor does it make a commitment to update the content contained herein.</p>
+
+<p><strong>Copyright</strong></p>
+
+<p>Copyright 2022 Snap One, LLC. All rights reserved.</p>
+
+<p>The above copyright notice applies to all content in this repository unless otherwise stated explicitly herein that a third-party’s copyright applies.</p>
+
+<p>No part of this publication may be reproduced, photocopied, stored on a retrieval system, or transmitted without the express written consent of the publisher.</p>
+
+<p><strong>Trademarks</strong></p>
+
+<p>Snap One and Snap One Logo, Control4 and the Control4 logo, and DriverWorks are trademarks or registered trademarks of  Snap One, LLC. Other product and company names mentioned in this repository may be the trademarks or registered trademarks of their respective owners.</p>
+
+<p><strong> Derivative Works</strong></p>
+
+<p>To the extent that you create any “Derivative Work” (meaning any work that is based upon one or more preexisting versions of the work provided to you in this repository, such as an enhancement or modification, revision, translation, abridgement, condensation, expansion, collection, compilation or any other form in which such preexisting works may be recast, modified, transformed or adapted, explicitly including without limitation, any updates or changes to Snap One, LLC’s software code or intellectual property) such Derivative Work shall be owned by Snap One, LLC and all right, title and interest in and to each such Derivative Work shall automatically vest in Snap One, LLC. To the extent any Derivative Work does not automatically vest in Snap One, LLC by operation of law, you hereby assign such Derivative Work to Snap One, LLC with full title guarantee. Snap One, LLC shall have no obligation to grant you any right in any such Derivative Work.</p>
+
+<p><strong>Contact Us</strong></p>
+
+<p>Snap One, LLC
+11734 S. Election Road
+Salt Lake City, UT 84020 USA</p>
+
+<p><a href="www.control4.com">http://www.control4.com</a></p>
+
+<h1 id='knx-support-overview'>KNX Support Overview</h1>
+
+<p>Control4 supports integration with devices using the standardized KNX control network topology. Note that the scope of support of this integration only includes products labeled with the KNX trademark. These devices have been tested for KNX protocol support as well as correct data coding by accredited third party test labs using KNX standardized Data types.
+The KNX protocol supports a wide variety of home automation applications including:</p>
+
+<ul>
+<li>Lighting control</li>
+<li>Heating/ventilation &amp; Air Conditioning control</li>
+<li>Shutter/Blind &amp; Shading control</li>
+<li>Alarm Monitoring</li>
+<li>Energy Management &amp; Electricity/Gas/Water metering</li>
+<li>Audio &amp; video distribution</li>
+</ul>
+
+<p>Through the Online Driver Database, Control4 has made available following drivers to assist with KNX implementation into a Control4 project:</p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Driver</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>KNX Switch</td>
+<td>knx_switch.c4i</td>
+<td>Control of a KNX switch</td>
+</tr>
+<tr>
+<td>KNX Dimmer</td>
+<td>knx_dimmer.c4i</td>
+<td>Control of a KNX dimmer</td>
+</tr>
+<tr>
+<td>KNX Keypad</td>
+<td>knx_keypad.c4i</td>
+<td>Control of a KNX keypad</td>
+</tr>
+<tr>
+<td>KNX Generic</td>
+<td>knx_generic.c4i</td>
+<td>Control manufacturer or device specific functions not covered by the corresponding KNX device driver</td>
+</tr>
+<tr>
+<td>KNX Blinds (2.9+)</td>
+<td>knx_blind.c4z</td>
+<td>Control of a KNX blind or louver actuator</td>
+</tr>
+<tr>
+<td>KNX Contact/Relay</td>
+<td>knx_contact_relay.c4i</td>
+<td>Control of up to 10 KNX relays and binary inputs</td>
+</tr>
+<tr>
+<td>KNX Motion Sensor</td>
+<td>knx_movement_sensor.c4z</td>
+<td>Allows to add KNX a motion or presence sensor to Control4 project</td>
+</tr>
+<tr>
+<td>KNX Single Setpoint Thermostat</td>
+<td>knx_thermostat.c4z</td>
+<td>Control of a KNX single-setpoint thermostat.</td>
+</tr>
+<tr>
+<td>KNX Heat or Cool Thermostat</td>
+<td>knx_heat_or_cool_thermostat.c4z</td>
+<td>Used in a &#39;seasonal changeover&#39; systems. It is designed to drive two separate systems, one for heating and one for cooling, which are not active at the same time.</td>
+</tr>
+<tr>
+<td>KNX Universal Thermostat</td>
+<td>knx_universal_thermostat.c4z</td>
+<td>Contains a database of 21 thermostat models. The driver adjusts its configuration and operation based on the selected model.</td>
+</tr>
+<tr>
+<td>Control4 KNX Thermostat</td>
+<td>control4_knx_thermostat.c4z</td>
+<td>Driver for Control4 KNX Thermostats: C4-KNX-THERM-xx, C4-KNX-BCET1-2-xx, C4-KNX-BCET3-6-xx, C4-KNX-BCET5-10-xx products</td>
+</tr>
+<tr>
+<td>Control4 Split Unit Gateway</td>
+<td>control4_knx_split_unit_gateway.c4z</td>
+<td>Driver for C4-KNX-SUAC product</td>
+</tr>
+</tbody></table>
+
+<p>In addition to these, drivers for communication with the KNX system are also available in the Online Driver Database:</p>
+
+<ul>
+<li>KNX Routing Gateway: knx_routing_gateway.c4z (Recommended)</li>
+<li>KNX Network: knx_network.c4i</li>
+</ul>
+
+<p>These network drivers in conjunction with any/all of the device drivers listed above will allow you to use the KNX protocol to control keypads, dimmers and switches within the Control4 environment.</p>
+
+<p>Control4 recommends the usage of the KNX Routing Gateway driver. This driver uses the KNXnet/IP Tunneling protocol which, due to its strict timing requirements for the Control4 system, causes occasional disconnection between Control4 and the KNX system. KNX Routing Gateway driver eliminates this issue by using the KNXnet/IP Routing connection-less multicast protocol, which is more robust compared to the Tunneling protocol.</p>
+
+<h2 id='pre-implementation-considerations'>Pre-Implementation Considerations</h2>
+
+<p>The KNX control protocol is used largely throughout the United Kingdom and Europe. It is an approved standard in the following areas:</p>
+
+<ul>
+<li>European Standard (CENELEC EN 50090 and CEN EN 13321-1).</li>
+<li>International Standard (ISO/IEC 14543-3).</li>
+<li>Chinese Standard (GB/Z 20965).</li>
+<li>US Standard (ANSI/ASHRAE 135).</li>
+</ul>
+
+<p>Prior to implementing KNX into your Control4 system, it is recommended that the following resources be reviewed: </p>
+
+<p><a href="[http://www.knx.org]">http://www.knx.org</a></p>
+
+<p>This is the official site of the KNX association. It provides an excellent starting point in understanding KNX architecture and requirements.</p>
+
+<p>It is important to note that this release of KNX support is targeted to early adopters who have experience with the KNX protocol and have the ability (or access to a resource) to work with an ETS (Engineering Tool software) to configure KNX Group Address and Object Functions. The scope of this document does not include instruction on designing and configuring KNX device functionality. </p>
+
+<p>This document is intended to outline the steps required to use the delivered device drivers to support KNX certified dimmers, switches and keypads within a Control4 system. It assumes that the KNX devices are already configured with the appropriate Group Address values.</p>
+
+<p>Note that all examples provides in this document are based off a KNX device Configuration using ETS5.</p>
+
+<h2 id='adding-the-knx-routing-gateway-driver'>Adding the KNX Routing Gateway Driver</h2>
+
+<p>The first step in including KNX certified devices into your Control4 project is the inclusion of the KNX Routing Gateway driver. The Routing Gateway driver serves as a layer between the KNX modules and the control devices (dimmers, switch, keypad.) in your project. It handles the parsing of commands sent from the devices and passes them on via Ethernet connection to the KNX modules. Similarly, it handles communication from the modules to the control devices.</p>
+
+<p><img src="images/1_4-01-4e958442.png"/></p>
+
+<p>The driver uses the KNXnet/IP Routing protocol. As this is a IP multicast protocol, all KNXNet/IP routing devices on local network need to be setup to perform multicast routing whether using a single KNXNet/IP router or multiple. In addition, the network connecting the Control4 master controller and KNXNet/IP devices needs to properly support multicast and not filter the multicast routing address and port used in KNX configuration.</p>
+
+<p>The KNXNet/IP Router devices need to be configured to not filter Group Addresses used by Control4 drivers. For most KNXNet/IP Routers this can be achieved in the following ways:</p>
+
+<ul>
+<li>Add Group Addresses used by Control4 drivers to KNXNet/IP Router filter tables in the ETS. In ETS5, this can be achieved by:
+
+<ul>
+<li>Selecting ‘Pass through Line Coupler’ option in the ‘Properties’ view of a Group Address, or</li>
+<li>Adding Group Addresses (or Group Address Ranges) to ‘Manual Filter Table Entries’ in the ‘Properties -&gt; Information’ view of the KNX Line.</li>
+</ul></li>
+<li>Configure the KNXNet/IP Router to route all group telegrams without considering filter table settings (most routers have the ‘Route’ option in ETS parameter setting). Please note that this option should be used with caution for installations with two or more KNX lines, since passing all group telegrams could lead to increased data traffic on the KNX lines.</li>
+</ul>
+
+<p>Refer to your KNXNet/IP device&#39;s manual for more information on how to setup the multicast routing.</p>
+
+<p>The preferred path in implementing KNX within Composer Pro is to add the KNX Routing Gateway driver to your project PRIOR to adding any KNX device drivers that you wish to control or monitor in your system. By adding the Routing Gateway driver first, all of the KNX device drivers subsequently added will be automatically bound correctly to the Routing Gateway driver in the Connections area of Composer Pro.</p>
+
+<p>Any KNX device drivers added to the project prior to the KNX Routing Gateway driver will need to be manually bound in the Connections area of Composer Pro.</p>
+
+<p><img src="images/1_4-02-d829aef9.png"/></p>
+
+<p>The following screen shot is populated KNX Routing Gateway Driver Properties page:</p>
+
+<p><img src="images/1_4-03-dad72e5c.png"/></p>
+
+<p>In the above example, the KNX Routing Gateway driver has been added to the project. Configuration points provided under Properties page include:</p>
+
+<p><strong>KNX Minimum Delay (ms):</strong> This is an editable time value that ranges from 25 to 500 milliseconds. This setting is the amount of time the driver will wait after receiving data from the KNX system before sending a KNX messages on the network.  Messages will never be sent to the KNX Network faster than this time allows.</p>
+
+<p><strong>KNX Maximum Delay (ms):</strong> This is an editable time value that ranges from 50 to 500 milliseconds. This setting is the time allotted for a KNX command to be sent. For example, consider a Control4 project that has 10 KNX light switches. A lighting scene is configured to turn off all of the lights with the push of a keypad button. If the KNX delay value is set to 100 milliseconds, at most each off command will be sent at 100 millisecond intervals. The first command will be sent immediately upon the button push, followed by the second OFF command 100 milliseconds later and so on until all 10 OFF commands are sent.</p>
+
+<p><strong>KNX Multicast Address:</strong> This settings is the multicast address used by the installed KNX system for multicast communication. It defaults to 224.0.23.12, which is the officially registered IP multicast address for the KNX Association.</p>
+
+<p><strong>KNX Multicast Port:</strong> Default is 3671. This setting is the multicast port used by the installed KNX system for multicast communication. It defaults to 3671, which is the officially registered IP port for the KNX Association. Any networking changes that modify the default port value must be reflected here.</p>
+
+<p><strong>Use KNX Individual Address:</strong> This settings specifies if a KNX Individual Address will be assigned to Control4 system. This settings is useful for diagnostics purposes. If this property is set to Yes, All KNX message sent by this driver will have a source address. This address will be visible in the ETS Group Monitor tool making it easier to trace KNX messages sent from this driver. If this property is set to “No”, KNX messages will have the source individual address of a KNX IP router.</p>
+
+<p><strong>KNX Individual Address:</strong> This setting represents a “dummy” individual address that will be used as a source address for all messages sent by the driver and will be visible in the ETS Group Monitor tool. This should be an address of a “dummy” device on the backbone line (0.0.x). This property is visible only if Use KNX Individual Address property is set to Yes.</p>
+
+<p>The Actions tab can be useful when trouble shooting or testing the KNX devices in your project.</p>
+
+<p><img src="images/1_4-04-2961250d.png"/></p>
+
+<p><strong>Display Globals:</strong> This button will display a list of all global values associated with the driver. This is particularly useful when debugging drivers.</p>
+
+<p><strong>Display Group Addresses:</strong> This button will display a list of all of the Group Address that the KNX Routing gateway driver is aware of. The addresses are displayed with their associated Datapoint and Group ID values.</p>
+
+<h2 id='adding-the-knx-network-driver'>Adding the KNX Network Driver</h2>
+
+<p>The first step in including KNX certified devices into your Control4 project is the inclusion of the KNX Network driver. The Network driver serves as a layer between the KNX modules and the control devices (dimmers, switch, keypad.) in your project. It handles the parsing of commands sent from the devices and passes them on via Ethernet connection to the KNX modules. Similarly, it handles communication from the modules to the control devices.</p>
+
+<p><img src="images/1_4-01-4e958442.png"/></p>
+
+<p>The preferred path in implementing KNX within Composer Pro is to add the KNX Network driver to your project PRIOR to adding any KNX device drivers that you wish to control or monitor in your system. By adding the Network driver first, all of the KNX device drivers subsequently added will be automatically bound correctly to the network driver in the Connections area of Composer Pro.
+Any KNX device drivers added to the project prior to the KNX Network driver will need to be manually bound in the Connections area of Composer Pro.</p>
+
+<p><img src="images/1_4-02-d829aef9.png"/></p>
+
+<p>The following screen shot is populated KNX Network Driver Properties page:</p>
+
+<p><img src="images/1_4-03-dad72e5c.png"/></p>
+
+<p>In the above example, the KNX Network driver has been added to the project. Configuration points provided under Properties page include:</p>
+
+<p><strong>KNX Gateway Address</strong>: The address represents the physical IP address of the KNX Gateway device used in your project.</p>
+
+<p><strong>KNX Delay:</strong> This is an editable time value that ranges from 0 to 500 milliseconds. It defaults to 0, which is OFF. This setting represents the time allotted for a KNX command to be sent. For example, consider a Control4 project that has 10 KNX light switches. A lighting scene is configured to turn off all of the lights with the push of a keypad button. If the KNX delay value is set to 100 milliseconds at most each off command will be sent at 100 millisecond intervals. The first command will be sent immediately upon the button push, followed by the second OFF command 100 milliseconds later and so on until all 10 OFF commands are sent. Manipulation of this value is particularly useful when large amounts of devices are in a system. In our example, while the OFF commands are being sent, OFF notifications are being received. If the commands are sent too quickly, a situation could arise where commands get dropped due to the influx of inbound notifications. Manipulation of this value is recommended when a performance lag occurs or commands are dropped.</p>
+
+<p><strong>Connection Status:</strong> This field is read only. It provides the current connection status with the KNX Server. It also provides error messages in the event that a connection issue arises. Supported errors include:</p>
+
+<ul>
+<li>Connection with KNXnet/IP Server successful.</li>
+<li>The KNXnet/IP Server device cannot find an active data connection with the specified ID.&quot;</li>
+<li>The requested connection type is not supported by the KNXnet/IP Server device</li>
+<li>One or more requested connection options are not supported by the KNXnet/IP Server device.&quot; The KNXnet/IP Server device cannot accept the new data connection because its maximum amount of concurrent connections is already occupied.&quot;</li>
+<li>The KNXnet/IP Server device detects an error concerning the data connection with the specified ID.</li>
+<li>The KNXnet/IP Server device detects an error concerning the KNX subnetwork connection with the specified ID.&quot;</li>
+<li>Unknown status from KNXnet/IP Server device (0x&quot; .. string.format(&quot;%02x&quot;, status) </li>
+</ul>
+
+<p><strong>Port:</strong> Default is 3671 – This value represents the port used by the KNX network driver for communication. Any networking changes that modify the default port value must be reflected here.</p>
+
+<p><strong>Controller Address:</strong> This a read only field that provides the address of the KNX Controller </p>
+
+<p>The Actions tab provides the ability to quickly connect to and disconnect from the KNX network driver. This can be useful when trouble shooting or testing the KNX devices in your project, especially if timers are used. Note that disconnecting through the button on the Actions tab requires you to re-connect through this screen. </p>
+
+<p><img src="images/1_4-04-2961250d.png"/></p>
+
+<p><strong>Display Globals:</strong> This button will display a list of all global values associated with the driver. This is particularly useful when debugging drivers.</p>
+
+<p><strong>Display Group Addresses:</strong> This button will display a list of all of the Group Address that the network driver is aware of. The addresses are displayed with their associated Datapoint and Group ID values.</p>
+
+<h2 id='linking-c4-devices-to-knx-device-group-objects'>Linking C4 Devices to KNX Device Group Objects</h2>
+
+<p>In order to configure KNX devices with Control4, you will need to obtain a list of the device’s Group Objects and their Group Addresses. This list can either come from your KNX dealer, EIB Installer or through the use of an approved Engineering Tool Software (ETS) software/database program that is compatible with the KNX standard.</p>
+
+<p>Each of the Control4 devices in your project will need to be linked to the KNX Group Objects that are available for that device. This is accomplished through the Properties page in Composer Pro. For purposes of example, we will use the switch driver to assign a Function Group Address.</p>
+
+<p>Begin by adding the KNX Switch driver to your project. Open Composer Pro and find the driver under the Items area. Click on the Search tab and select Online. Using Type of “Light (v2)” and the Manufacturer of “KNX” you will see the switch and dimmer drivers.</p>
+
+<p><img src="images/1_5-01-5a1d0896.png"/></p>
+
+<p>Double click on the Switch driver to add it to your project. Clicking on the properties for the switch device will display the following screen:</p>
+
+<p><img src="images/1_5-02-d1ac27a0.png"/></p>
+
+<p>It is important to understand that each &quot;Address&quot; property for a driver needs to be linked to a KNX Device’s Group Object Function. The value that is used here is the Group Address associated with the Group Object. In our example, our switch supports two functions: switching (ON/OFF) and switching feedback (ON/OFF status) objects.</p>
+
+<p>To link the ON/OFF switching functionality to this device, it is necessary to enter the KNX Device’s Switching Object Group Address. This is a unique value that is configured in your KNX configuration. Based on our example KNX project, the current configuration for this is a value of 0/0/10. By entering this value in the Set Address field, our switch now has the ability to turn a device ON and OFF.</p>
+
+<p>The switch driver also supports the Feedback (Status Address). This is a function that, when enabled, allows for the switch to communicate its state over the KNX network. Once again, this is a unique value to your KNX configuration. Based on our example KNX project, the current configuration for this is a value of 0/0/11. By entering this value, our switch will be able to get feedback from the KNX system which can be displayed on touchscreen and other devices.</p>
+
+<p><strong>An Important Note about Status Address Settings</strong>
+For some KNX devices, the Feedback functionality may not be enabled by default. It is important to validate that Feedback is enabled and that a Group Address is linked with the Feedback Group Object through the ETS tool or your KNX Installer. If Feedback is not enabled, it will be difficult to monitor/troubleshoot your KNX device configuration. Control4 recommends Feedback being added and enabled for all devices.</p>
+
+<p>In addition to enabling the feedback functionality, it is recommended to set the &quot;Read&quot; flag (R) for all status Group Objects that are used by the Control4 drivers. The KNX Routing Gateway driver will issue read requests for all status addresses found in the project at startup. A read request will only work if a corresponding Group Object has its Read flag set in the ETS. The Read flag enables the object value to be read out i.e. a response telegram is only sent after a read telegram if the read flag of the object has been set.</p>
+
+<p>The remainder of this document will outline the steps required to add a KNX supported dimmer and keypad to your project. As you add KNX devices to your project you will need to know beforehand the Object Function and Group Address Values that are associated with the device. These values represent commands or notifications that are supported under the KNX architecture for the device. It is not recommended to proceed with the implementation unless these values are obtained.</p>
+
+<h2 id='adding-a-dimmer'>Adding a Dimmer</h2>
+
+<p>To add a KNX enabled Dimmer to your project, you will need to add the knx_dimmer.c4i driver. You will need to add the knx_dimmer.c4i file to directory path for your other Lua based drivers.</p>
+
+<p>This is typically: C:\Users\user\Documents\Control4\Drivers</p>
+
+<p>Once added, you can open Composer Pro and find the driver under the Items area. Click on the Search tab and select Local Database. Using Device Type of “Light” and the Manufacturer of “KNX” you will see the switch and dimmer drivers.</p>
+
+<p><img src="images/1_6-01-631179c2.png"/></p>
+
+<p>Double click on the Dimmer driver to add it to your project. Clicking on the properties for the switch device will display the following screen:</p>
+
+<p><img src="images/1_6-02-2440fd43.png"/></p>
+
+<p><strong>Driver Status</strong> – This field displays an error when an invalid group address is entered. Future implementation will include handling of more error messages provided by the network driver.</p>
+
+<p><strong>Dimming Mode:</strong> The Dimming Mode button supports two types of dimmer functionality: 
+On/Off or Set Level.</p>
+
+<p>On/Off is useful for dimmers that only have the ability to ramp up to 100% and then back down to 0% If your dimmer cannot ramp to a specified level, this value should be set to ON/Off. </p>
+
+<p>The Level value is the default value of the button. It should be set for dimmers that can ramp to a provided value. The Dimmer properties screen also allows you to enter the Set 
+Address values for your Dimmer.</p>
+
+<p>Feedback is accomplished with the Dimmer driver using the Status Address field. Adding the correct Group Address for this functionality will enable the Dimmer to provide Feedback on its current level of lighting.
+Note: The version of this release currently does not support ramp-to-level functionality.</p>
+
+<h2 id='adding-a-keypad'>Adding a Keypad</h2>
+
+<p>Open ComposerPro and find the driver under the Items area. Click on the Search tab and select Online. Search for &quot;KNX Keypad&quot; using Manufacturer of “KNX” and you will see the Keypad driver.</p>
+
+<p><img src="images/1_7-01-ac79381c.png"/></p>
+
+<p>Double click on the Keypad driver to add it to your project.</p>
+
+<p>The Keypad driver can be configured for one to ten buttons. Each button can be mapped to a KNX button on a keypad. You are not restricted to mapping all of the buttons to the same keypad. Each button is mapped based on the addressed used in the Button Address parameter.</p>
+
+<p>The Keypad driver allows you to capture KNX button press events that (through programming and connections) can be used to control other devices in the Control4 project.</p>
+
+<p>The button mode is used to configure the button to match the corresponding KNX button configuration.</p>
+
+<p>Through Control4 programming and connections they can also initiate Actions such as ramping up and down audio volume or lighting scenes. For this reason it is important that you have the ability to configure your KNX Configuration and Group Address values for your keypad so it can accomplish everything that you want the keypad to do.</p>
+
+<p>For example, for &quot;Press/Release (On/Off)&quot; button mode, the parameters for the keypad must be set to “Switching” in the ETS software and a Button Press must be set to ON and Button Release set to OFF. Otherwise, Programming and control connections in Composer Pro will not work.</p>
+
+<p>Clicking on the properties for the Keypad will display the following screen:</p>
+
+<p><img src="images/1_7-02-07437b76.png"/></p>
+
+<p>The example above shows the configured properties for an eight button keypad utilizing eight button configurations. Currently, ten is the maximum amount of buttons supported. Each of the buttons on a keypad can have the following fields: Button Name, Button Mode, Button Address and Button Value.</p>
+
+<p><strong>Button Name</strong> - Name or short description of the button. This field will be used for the name of the control connections, therefore it is recommended to set it to a meaningfull value.</p>
+
+<p><strong>Button Mode</strong> – The drop down box allows for the selection of several button press configurations. Two important factors should be considered when selecting a button mode:</p>
+
+<ol>
+<li>How you plan on using Control4 programming and connections in conjunction with button press and/or button click events.</li>
+<li>The configuration for the buttons on your KNX enabled Keypad.</li>
+</ol>
+
+<p>The following modes are provided if you wish to create programming based on Button Press and Release events:</p>
+
+<p><strong>Press/Release (On/Off)</strong> – This mode is selected when a button press sends a value of 1 from KNX and a value of 0 is sent from KNX upon release.</p>
+
+<p><strong>Press/Release (Off/On)</strong> – This mode is selected when a button press sends a value of 0 from KNX and a value of 1 is sent from KNX upon release.</p>
+
+<p>The following table outlines the Mode to use based on the value received from KNX:</p>
+
+<table><thead>
+<tr>
+<th>Mode</th>
+<th>Sent Upon Press</th>
+<th>Sent Upon Release</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>On/Off</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Off/On</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody></table>
+
+<p><strong>The following modes are provided if you wish to create programming based on Button Click events:</strong></p>
+
+<p><strong>Click: On</strong> – The click event is fired when a value of 1 is received from KNX.</p>
+
+<p><strong>Click: Off</strong> - The click event is fired when a value of 0 is received from KNX.</p>
+
+<p><strong>Toggle</strong> – The click event is fired when any value is received from KNX.</p>
+
+<p><strong>Value (1 byte)</strong> – The click event is fired when the defined is received from KNX</p>
+
+<table><thead>
+<tr>
+<th>Mode</th>
+<th>0</th>
+<th>1</th>
+<th>Defined Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Click: On</td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Click: Off</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Toggle</td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>Value (1 Byte )</td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+</tbody></table>
+
+<h3 id='control-bindings'>Control Bindings</h3>
+
+<p>KNX Keypad driver has available BUTTON_LINK, RELAY and CONTACT_SENSOR connections for each button as way of controlling other devices in the Control4 system. These connections are dynamically created depending on the number of buttons and their modes.</p>
+
+<p>As an example, we will use a KNX button to toggle a lighting scene using the BUTTON_LINK connection. The KNX button is configured to send On (1) value on a press and Off (0) value on a release. Corresponding button mode in the driver for this configuration is &quot;Press/Release (On/Off)&quot;.</p>
+
+<p><img src="images/1_7-03-9e36f53f.png"/></p>
+
+<p>After configuring the button 1 in the Properties page, navigate to Connections page and click on the KNX Keypad device. BUTTON_LINK connection will become available for this button. Connect it to a Toggle Button Link of a lighting scene. Now, every time a customer holds the button, the scene will ramp in the opposite direction.</p>
+
+<p><img src="images/1_7-04-eb6b5b4b.png"/></p>
+
+<h2 id='adding-the-knx-generic-driver'>Adding the KNX Generic Driver</h2>
+
+<p>Open Composer Pro and find the driver under the Items area. Click on the Search tab and select Online. Type &quot;KNX Generic&quot; in the Search field and you will see the Generic driver.</p>
+
+<p>The generic driver is included as a means to control a device or get data from a device that currently has no driver. The driver provides a useful means to assign “Channels” of control which utilize KNX addresses and DataPoint Types to send KNX values to a device, receive KNX values or statuses from a device.</p>
+
+<p>Once the driver is added, it is configured under the Lua Properties tab. When all of the desired control Channels have been configured, advanced programming (Actions, Events &amp; Variables) can be created within ComposerPro to control a device as well as handle feedback from a devices.</p>
+
+<p><strong>Configuring the KNX Generic Driver</strong>
+Once the Generic Driver has been added to your project you can open the driver’s properties page. This page is where all of the driver configuration will take place. The Properties page supports the configuration of up to eight control “Channels”. The driver defaults to having all eight available channels disabled. A channel is enabled by selecting its Data Point Type. Each channel has (at a minimum) the following fields:</p>
+
+<p><strong>Channel # Name:</strong> This field allows you to provide a name or a description of the Channel.</p>
+
+<p><strong>Channel # Data Point Type</strong> This field supports the assignment of the desired KNX Data Point Type (DPT) value. DPTs currently supported include all DPTs listed in the <a href="https://control4.github.io/docs-driverworks-draft/#datapoint-type-overview">API and Datapoint Types Guide</a>.</p>
+
+<p><strong>Channel # Address</strong> – This field contains the device’s KNX group address.</p>
+
+<p>Other properties depend on the selected Data Point Type, as it will be shown in the examples bellow.</p>
+
+<p>For purposes of example, we’ll use the Generic Driver to control a blind. To configure Channel 1 to use Data Point Type 1 for devices that have a Group Address of 1/0/10 our Properties page will look like this:</p>
+
+<p><img src="images/1_8-01-b1f2c168.png"/></p>
+
+<p>Note that in our example above we are assigning a Channel 1 Value of 1. Based on KNX documentation, we know that there are two possible values for Data Point Type 1: 0 or 1.</p>
+
+<p>For Channel 2, we need to use Data Point Type value 3. DPT 3 supports directional control (down &amp; up) as well as incremental changes in direction. Our Channel 2 configuration looks like this:</p>
+
+<p><img src="images/1_8-02-0f577786.png"/></p>
+
+<p>We are passing a direction value of 0(up) for this channel. We are also supplying a Step Code value. This value represents the percentage of change channel 2 will support. Our example shows 25%. This means that the control provided by Channel 2 will be an increase in our blind level by 25% from its present position.</p>
+
+<p>For Channel 3, we’ll establish some scheduling control for our blind by adding Day, Hour, Minute and Second values by using Data Point Value 10.</p>
+
+<p><img src="images/1_8-03-df31cc20.png"/></p>
+
+<p>Based on the values entered above, the current schedule value for Channel 3 is Monday (1), 3:30:07 PM (15) (30) (7).
+Note that a day value of 0 results in no day being represented.</p>
+
+<p>We can expand on our scheduling capabilities by using Data Point Value 11 which supports Day, Month and Year values. For example, a date value of July 6, 2013 would look like this:</p>
+
+<p><img src="images/1_8-04-015a72f3.png"/></p>
+
+<p>Now that we have configured all four Channels for this instance of the Generic driver the channels can be tested under the Actions tab:</p>
+
+<p><img src="images/1_8-07-292f2485.png"/></p>
+
+<p>The Actions tab default to displaying all eight Channel configurations. By clicking on each of the four respective channels which we have configured we can test the configuration of the Channel itself.</p>
+
+<p><strong>Composer Programming and the KNX Generic Driver</strong>
+One of the main purposes behind providing the KNX Generic driver is to support control of a device without having to write a dedicated driver for that device. Using the programming capabilities found in ComposerPro, we can trigger control scenarios based on four KNX based events. These events are:</p>
+
+<p><strong>Matching Data Received</strong> – This event occurs when the value that is assigned to a specific channel is received from the KNX network. For example, we configure Channel 1 with a value of 1. When a 1 is received from the KNX network for this channel, this event can be used for programming purposes.</p>
+
+<p><strong>Data Sent to KNX</strong> – This event occurs when the data value for a channel is sent to the KNX network from this driver. For example, when executing a &quot;Send Channel X Value&quot; action.</p>
+
+<p><strong>Data Received from KNX</strong> – This event is similar to Matching Data Received in that it is based on receiving data from the KNX network. This event is triggered whenever any data is received for a channel from the KNX network.</p>
+
+<p><strong>Read Request Received</strong> - This event is triggered when a read request is received from the KNX network for a Group Address assigned to a channel.</p>
+
+<p>Programming events are available when you click on programming in ComposerPro for the KNX Generic Driver.</p>
+
+<p>Let’s consider some simple programming scenarios based on events we can use with the way we have configured the KNX Generic Driver. In our first example, we have created programming to raise our blinds up when Channel 1 is activated. It will pass a value of 1 to the KNX network and, through programming, cause our blinds to raise:</p>
+
+<p><img src="images/1_8-09-ed8a3906.png"/></p>
+
+<p>We can also base programming off of receiving data from the KNX network. Using Channel 1 as an example again, if we receive a value other than one we can trigger a programming event using the “Data Received from KNX” event definition. In the example below, if we receive any value other than a 1 from the network through Channel 1 we will lower the blinds:</p>
+
+<p><img src="images/1_8-10-0c707873.png"/></p>
+
+<p>Note that this example is similar to using the “Matching Data Received” event definition. If we were using “Matching Data Received” (a value of 1 in our example) we would program our blinds to rise.</p>
+
+<p>Since we have configured our generic Driver with some scheduling related Data point Types we can program an event off of a time. For example, if we use “Matching Data Received” for Channel 3 we can raise or lower our blinds at a certain time. We configured Channel 3’s value for Monday 3:30:07 PM or (1) (15) (30) (7). The programming below will lower our blinds (if they are up) when the matching values are received from the KNX network:</p>
+
+<p><img src="images/1_8-11-8c14fdec.png"/></p>
+
+<p><strong>Using Variables with the KNX Generic Driver</strong>
+If you open the KNX Generic Driver under Programming, you will see all of the variables that are currently available for KNX. By default, Programming populates all of the available variables for a channel. It also provides these variables for a complete set of eight channels. For example, the variables available for Channel_1 include:</p>
+
+<p><img src="images/1_8-12-77522272.png"/></p>
+
+<p>Note that while all variables are displayed, only variables applicable to the Data Point Type configured for the channel under the Properties page will support programming. For example, the CHANNEL_1_STEP variable for Channel 1 will not work if DPT_1 is configured. </p>
+
+<p>Through the use of variable, it is possible to base programming off sending data to KNX, receiving data from KNX and receiving matching data from KNX. For example, the screen shot below shows variable-based programming when data is sent through Channel 1 of our KNX Generic Driver. Based on the information in the previous section, Channel 1 uses DPT_1 which in turn, supports passing values 0 &amp; 1 to KNX.</p>
+
+<p><img src="images/1_8-13-95fe3729.png"/></p>
+
+<p>In the example above, when data is sent to KNX through Channel 1 we will toggle Light 3 in the Theater Room through the use of a Command. It is worth noting that when using variable based programming in conjunction with the “Data Received from KNX” generic event the value that will be used by the variable is that actual value received from KNX as opposed to the value configured for the channel in the Properties page. Conditionals and Loops are also available as programming options.</p>
+<h1 id='api-and-datapoint-types'>API and Datapoint Types</h1>
+
+<h2 id='introduction-to-knx-driver-development'>Introduction to KNX Driver Development</h2>
+
+<p>Control4 supports integration with device drivers using the standardized KNX control network topology. The purpose of this section is to provide a starting point for third party and partner level KNX driver development. Its focus is on defining an API layer that is available for a KNX driver to use in order to communicate with both the KNX Network layer as it resides within the Control4 environment, as well as other KNX devices.</p>
+
+<p>The content defines each of the APIs with a description, parameter list and an example. Further examples are referenced within the KNX drivers provided in SDK. It is recommended that these drivers be reviewed in conjunction with this document before beginning KNX driver development. Finally, all of the currently supported Datapoint Types (DPTs) are defined at the end of the document.</p>
+
+<p>Note that this content is intended as a supplement to the existing Control4 DriverWorks SDK documentation. Its scope is KNX specific and it assumes knowledge in KNX topology and standards exists. Also, if you are new to writing drivers targeted for the Control4 environment, it is strongly recommended that a review of the DriverWorks SDK occur before continuing.</p>
+
+<h2 id='the-role-of-sendtoproxy'>The Role of SendToProxy</h2>
+
+<p>Before discussing the use of the APIs, it is important to understand several concepts that they all share. As you review the API content you will notice that API’s are sent from your driver using the standard Control4 function: SendToProxy. SendToProxy requires two additional parameters in addition to the API. These include the KNX connection value and a table of parameters. For example:</p>
+
+<p><code>C4:SendToProxy(&lt;connection value&gt;,”&lt;command&gt;”,&lt;table of parameters&gt;)</code></p>
+
+<p>or</p>
+
+<p><code>C4:SendToProxy(1,”ADD-GROUP_ITEM”,tParams)</code></p>
+
+<p>The connection value in the examples above is the value assigned to the KNX ID value in the connections section of your driver. The &lt;id&gt;1&lt;/id&gt; line in the sample below contains the connection value required by SendToProxy. The code example to the right comes from the KNX Network driver:</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;connection&gt;</span>
+      <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+      <span class="nt">&lt;facing&gt;</span>6<span class="nt">&lt;/facing&gt;</span>
+      <span class="nt">&lt;connectionname&gt;</span>KNX Control<span class="nt">&lt;/connectionname&gt;</span>
+      <span class="nt">&lt;type&gt;</span>1<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;consumer&gt;</span>True<span class="nt">&lt;/consumer&gt;</span>
+      <span class="nt">&lt;audiosource&gt;</span>False<span class="nt">&lt;/audiosource&gt;</span>
+      <span class="nt">&lt;videosource&gt;</span>False<span class="nt">&lt;/videosource&gt;</span>
+      <span class="nt">&lt;linelevel&gt;</span>True<span class="nt">&lt;/linelevel&gt;</span>
+      <span class="nt">&lt;classes&gt;</span>
+        <span class="nt">&lt;class&gt;</span>
+          <span class="nt">&lt;classname&gt;</span>KNX_DEVICE<span class="nt">&lt;/classname&gt;</span>
+          <span class="nt">&lt;autobind&gt;</span>True<span class="nt">&lt;/autobind&gt;</span>
+        <span class="nt">&lt;/class&gt;</span>
+      <span class="nt">&lt;/classes&gt;</span>
+<span class="nt">&lt;/connection&gt;</span>
+</code></pre></div>
+
+<p>The table of parameters required by SendToProxy consists of a set (or at times a subset) of KNX Object Functions that are unique to your driver, the device it supports and the Datapoint Types you are using. The table elements are:</p>
+
+<table><thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>GROUP_ADDRESS</code></td>
+<td>This is the KNX Group Address for the Object Function.</td>
+</tr>
+<tr>
+<td><code>DEVICE_ID</code></td>
+<td>This is the Device ID of your driver.</td>
+</tr>
+<tr>
+<td><code>PROPERTY</code></td>
+<td>This is the Property Name in Composer where the Group Address is stored.</td>
+</tr>
+<tr>
+<td><code>DATA_POINT_TYPE</code></td>
+<td>The Data Point Type (DPT) required by the Object Function.</td>
+</tr>
+</tbody></table>
+
+<p>The example to the right shows how the table elements are assembled in conjunction with a connection Id value of 1 and the <code>ADD_GROUP_ITEM</code> API:</p>
+
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DEVICE_ID"</span><span class="p">]</span> <span class="o">=</span> <span class="n">C4</span><span class="p">:</span><span class="n">GetDeviceID</span><span class="p">()</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"PROPERTY"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_1</span><span class="err">”</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">ADD_GROUP_ITEM</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id='add_group_item'>ADD_GROUP_ITEM</h2>
+
+<p>This function is used to register each of KNX Object Functions required for your driver, with the KNX Network driver. </p>
+
+<h6 id='available-from-8-0'>Available from 8.0</h6><h3 id='signature'>Signature</h3>
+<p><code>C4:SendToProxy(num, &quot;ADD_GROUP_ITEM&quot;, tParams)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>GROUP_ADDRESS</code></td>
+<td>This is the KNX Group Address for the Object Function.</td>
+</tr>
+<tr>
+<td><code>DEVICE_ID</code></td>
+<td>This is the Device ID of your driver.</td>
+</tr>
+<tr>
+<td><code>PROPERTY</code></td>
+<td>This is the Property Name in Composer where the Group Address is stored.</td>
+</tr>
+<tr>
+<td><code>DATA_POINT_TYPE</code></td>
+<td>The Data Point Type (DPT) required by the Object Function.</td>
+</tr>
+<tr>
+<td><code>STARTUP_READ</code></td>
+<td>Optional. If false, Group Address will not be read on startup. If omitted or set to true, Group Address will be read on startup.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3>
+<p>The example to the right shows how the table elements are assembled in conjunction with a connection Id value of 1 and the <code>ADD_GROUP_ITEM</code> API:</p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DEVICE_ID"</span><span class="p">]</span> <span class="o">=</span> <span class="n">C4</span><span class="p">:</span><span class="n">GetDeviceID</span><span class="p">()</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"PROPERTY"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_1</span><span class="err">”</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">ADD_GROUP_ITEM</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='clear_group_item'>CLEAR_GROUP_ITEM</h2>
+<p>This function is used to remove <strong>all</strong> of the group items (tParams) that have been previously registered with the KNX Network driver.</p>
+<h6 id='available-from-8-0'>Available from 8.0</h6><h3 id='signature'>Signature</h3>
+<p><code>C4:SendToProxy(num,”CLEAR_GROUP_ITEM”,tParams) </code></p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>DEVICE_ID</code></td>
+<td>This is the Device ID of your driver.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3>
+<p>This example was taken from the KNX Generic driver: </p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DEVICE_ID"</span><span class="p">]</span> <span class="o">=</span> <span class="n">C4</span><span class="p">:</span><span class="n">GetDeviceID</span><span class="p">()</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">CLEAR_GROUP_ITEM</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='data_from_knx'>DATA_FROM_KNX</h2>
+<p>This command is sent from the KNX network driver (KNX Routing Gateway or KNX Network) to a KNX driver when data is received from KNX for a registered Group Address which was previously registered with a <a href="https://control4.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
+<h6 id='available-from-8-0'>Available from 8.0</h6><h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>GROUP_ADDRESS</code></td>
+<td>This is the KNX Group Address associated with the data that is received from the KNX.</td>
+</tr>
+<tr>
+<td><code>RESPONSE</code></td>
+<td>Specifies if the received data is a response to a read request.</td>
+</tr>
+</tbody></table>
+
+<p>Note that all other parameters representing data from the KNX are dependent on the DPT being used as specified in the <a href="https://control4.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
+<h3 id='example'>Example</h3>
+<p>To the right is an example of a <code>DATA_FROM_KNX</code> handler of the KNX Switch driver. The driver previously registered a Group Address specified in the Status Address property with the <a href="https://control4.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nc">EX_CMD</span><span class="p">.</span><span class="nf">DATA_FROM_KNX</span><span class="p">(</span><span class="n">tParams</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">groupID</span> <span class="o">=</span> <span class="n">trim</span><span class="p">(</span><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">])</span>
+  <span class="kd">local</span> <span class="n">value</span> <span class="o">=</span> <span class="nb">tonumber</span><span class="p">(</span><span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">])</span>
+  <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">groupID</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="ow">not</span> <span class="n">value</span><span class="p">)</span> <span class="k">then</span> <span class="k">return</span> <span class="k">end</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="n">groupID</span> <span class="o">==</span> <span class="n">Properties</span><span class="p">[</span><span class="s2">"Status Address"</span><span class="p">])</span> <span class="k">then</span>
+    <span class="k">if</span> <span class="n">IsStatusInverted</span><span class="p">()</span> <span class="k">then</span>
+      <span class="n">value</span> <span class="o">=</span> <span class="p">((</span><span class="n">value</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="mi">1</span>
+    <span class="k">end</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">value</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="k">then</span>
+      <span class="n">gLightLevel</span> <span class="o">=</span> <span class="mi">100</span>
+    <span class="k">else</span>
+      <span class="n">gLightLevel</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">end</span>
+    <span class="n">SetProxyLightLevel</span><span class="p">()</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+<h2 id='get_network_version'>GET_NETWORK_VERSION</h2>
+<p>This function allows you to associate your driver to a specific version of the KNX Network driver. It will provide your driver with the network version of the KNX Network Driver. Use this API only if your driver requires a specific version of the KNX Network driver.</p>
+
+<p>Upon receiving the <code>GET_NETWORK_VERSION</code> request from your driver, The Network Driver will send a <code>NETWORK_VERSION </code>command back to your driver. Your driver will need to handle the <code>NETWORK_VERSION</code> command within the ExecuteCommand function.</p>
+<h6 id='available-from-8-0'>Available from 8.0</h6><h3 id='signature'>Signature</h3>
+<p><code>C4:SendToProxy(num, ”GET_NETWORK_VERSION”, tParams) </code></p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>DEVICE_ID</code></td>
+<td>This is the Device ID of your driver.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3>
+<p>Example 1 details sending the <code>GET_NETWORK_VERSION</code> function to the network Driver:</p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">--Example 1</span>
+
+<span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DEVICE_ID"</span><span class="p">]</span> <span class="o">=</span> <span class="n">C4</span><span class="p">:</span><span class="n">GetDeviceID</span><span class="p">()</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"GET_NETWORK_VERSION"</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<p>Example 2 details how your driver should receive the response from the Network Driver:</p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">-- Example 2</span>
+
+<span class="k">function</span> <span class="nc">EX_CMD</span><span class="p">.</span><span class="nf">NETWORK_VERSION</span><span class="p">(</span><span class="n">tParams</span><span class="p">)</span>
+    <span class="n">dbgFunction</span><span class="p">(</span><span class="s2">"EX_CMD.NETWORK_VERSION()"</span><span class="p">)</span>
+    <span class="n">dbgParams</span><span class="p">(</span><span class="n">tParams</span><span class="p">)</span>
+
+    <span class="n">gNetworkVersion</span> <span class="o">=</span> <span class="nb">tonumber</span><span class="p">(</span><span class="n">tParams</span><span class="p">[</span><span class="s2">"VERSION"</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">gNetworkVersion</span> <span class="o">&lt;</span> <span class="n">SUPPORTED_NETWORK_VERSION</span><span class="p">)</span> <span class="k">then</span>
+        <span class="kd">local</span> <span class="n">errorMessage</span> <span class="o">=</span> <span class="s2">"WARNING: KNX Network Driver version = "</span> <span class="o">..</span> <span class="n">gNetworkVersion</span> <span class="o">..</span> <span class="s2">". KNX Network Driver version should be "</span> <span class="o">..</span> <span class="n">SUPPORTED_NETWORK_VERSION</span> <span class="o">..</span> <span class="s2">" or greater."</span>
+        <span class="n">C4</span><span class="p">:</span><span class="n">UpdateProperty</span><span class="p">(</span><span class="s2">"Driver Status"</span><span class="p">,</span> <span class="n">errorMessage</span><span class="p">)</span>
+        <span class="n">dbg</span><span class="p">(</span><span class="n">errorMessage</span><span class="p">)</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+<h2 id='knx_read_request'>KNX_READ_REQUEST</h2>
+<p>This command is sent from the KNX network driver (KNX Routing Gateway or KNX Network) to a KNX driver when a read request is received for a registered Group Address which was previously registered with a <a href="https://control4.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
+<h6 id='available-from-8-0'>Available from 8.0</h6><h3 id='parameters'>Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>GROUP_ADDRESS</code></td>
+<td>This is the KNX Group Address for which a read request is issued from the KNX.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3>
+<p>To the right is an example of a <code>KNX_READ_REQUEST</code> handler of the KNX Generic driver. The driver previously registered a Group Address specified in the Status Address property with the <a href="https://control4.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nc">EX_CMD</span><span class="p">.</span><span class="nf">KNX_READ_REQUEST</span><span class="p">(</span><span class="n">tParams</span><span class="p">)</span>
+  <span class="kd">local</span> <span class="n">groupID</span> <span class="o">=</span> <span class="n">trim</span><span class="p">(</span><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">])</span>
+
+  <span class="k">for</span> <span class="n">channelNumber</span> <span class="k">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">ChannelIdToNumberTable</span><span class="p">(</span><span class="n">groupID</span><span class="p">))</span> <span class="k">do</span>
+    <span class="n">FireReadRequestEvent</span><span class="p">(</span><span class="n">channelNumber</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+<h2 id='remove_group_item'>REMOVE_GROUP_ITEM</h2>
+<p>This function is used to remove a pre-registered group item with the KNX network driver.</p>
+<h6 id='available-from-8-0'>Available from 8.0</h6><h3 id='signature'>Signature</h3>
+<p><code>C4:SendToProxy(num, ”REMOVE_GROUP_ITEM”, tParams) </code></p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>GROUP_ADDRESS</code></td>
+<td>This is the KNX Group Address for the Object Function.</td>
+</tr>
+<tr>
+<td><code>DEVICE_ID</code></td>
+<td>This is the Device ID of your driver.</td>
+</tr>
+<tr>
+<td><code>PROPERTY</code></td>
+<td>This is the Property Name in Composer where the Group Address is stored.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DEVICE_ID"</span><span class="p">]</span> <span class="o">=</span> <span class="n">C4</span><span class="p">:</span><span class="n">GetDeviceID</span><span class="p">()</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"PROPERTY"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">REMOVE_GROUP_ITEM</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='request_status'>REQUEST_STATUS</h2>
+<p>This function allows you to query the KNX system for the status of an Object Function. The KNX Dimmer and KNX Switch drivers provide examples of using this function.</p>
+<h6 id='available-from-8-0'>Available from 8.0</h6><h3 id='signature'>Signature</h3>
+<p><code>C4:SendToProxy(num, ”REQUEST_STATUS”, tParams) </code></p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>GROUP_ADDRESS</code></td>
+<td>This is the KNX Group Address for the Object Function.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">REQUEST_STATUS</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='send_to_knx'>SEND_TO_KNX</h2>
+<p>This function is used to send commands to the KNX system based on Data Point Types (DPTs) and group address. </p>
+<h6 id='available-from-8-0'>Available from 8.0</h6><h3 id='signature'>Signature</h3>
+<p><code>C4:SendToProxy(1, ”SEND_TO_KNX”, tParams)</code></p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>GROUP_ADDRESS</code></td>
+<td>This is the KNX Group Address for the Object Function.</td>
+</tr>
+<tr>
+<td><code>DATA_POINT_TYPE</code></td>
+<td>The Data Point Type (DPT) required by the Object Function.</td>
+</tr>
+</tbody></table>
+
+<p>Note that all other potential parameters are dependent on the DPT being used.</p>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_1</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="err">“</span><span class="n">VALUE</span><span class="err">”</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='update_group_item'>UPDATE_GROUP_ITEM</h2>
+<p>This function is used to update pre-registered group items with the KNX network driver.</p>
+<h6 id='available-from-8-0'>Available from 8.0</h6><h3 id='signature'>Signature</h3>
+<p><code>C4:SendToProxy(num, ”UPDATE_GROUP_ITEM”, tParams) </code></p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>GROUP_ADDRESS</code></td>
+<td>This is the KNX Group Address for the Object Function.</td>
+</tr>
+<tr>
+<td><code>DEVICE_ID</code></td>
+<td>This is the Device ID of your driver.</td>
+</tr>
+<tr>
+<td><code>PROPERTY</code></td>
+<td>This is the Property Name in Composer where the Group Address is stored.</td>
+</tr>
+<tr>
+<td><code>DATA_POINT_TYPE</code></td>
+<td>The Data Point Type (DPT) required by the Object Function.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3>
+<p>Note that in the example to the right we are changing “Channel 1 Address” Datapoint Type to <a href="https://control4.github.io/docs-driverworks-draft/#dpt_3">DPT_3</a>.</p>
+<div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DEVICE_ID"</span><span class="p">]</span> <span class="o">=</span> <span class="n">C4</span><span class="p">:</span><span class="n">GetDeviceID</span><span class="p">()</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"PROPERTY"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_3</span><span class="err">”</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">UPDATE_GROUP_ITEM</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='knx-datapoint-type-overview'>KNX Datapoint Type Overview</h2>
+<p>The following section lists the Datapoint Types supported in this version of the Control4 KNX SDK. It is important to select the appropriate Datapoint Type. This decision should be based on two important factors: </p>
+
+<ol>
+<li>What value(s) does your KNX device expect to receive?</li>
+<li>What format do those values need to be in?</li>
+</ol>
+
+<p>Knowledge of the device you are creating a driver for is important as each of the Datapoint Types differ in value and value formatting. This section is meant to be used as a reference only. Each of the Datapoint Types listed below is outlined in detail in the following document provided by KNX: <em>KNX System Specification Internetworking Datapoint Types. </em></p>
+
+<p>This can be found at <a href="https://support.knx.org/hc/en-us/articles/360000040999-KNX-Specifications">www.support.knx.org</a></p>
+
+<h2 id='dpt_1'>DPT_1</h2>
+<p>Boolean DataPoint Type, such as switch on or off.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>Boolean Value - 0 or 1</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_1</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="err">“</span><span class="n">VALUE</span><span class="err">”</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_2'>DPT_2</h2>
+<p>Boolean DataPoint Type with a control part.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>CONTROL</td>
+<td>0 for No Control<br>1 for Control</td>
+</tr>
+<tr>
+<td>VALUE</td>
+<td>Boolean Value - 0 or 1</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_2</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"CONTROL"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_3'>DPT_3</h2>
+<p>This Datapoint Type is commonly used in cases where a value of 0 or 1 is passed to decrease or increase a value, usually associated with light brightness.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>DIRECTION</td>
+<td>0 - Decrease (for lighting), Up (for blind movement)<br>1 - Increase (for lighting), Down (for blind movement)</td>
+</tr>
+<tr>
+<td>STEP_CODE</td>
+<td>The amount of intervals into which the range of 0%..100% is subdivided, or the break indication.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_3</span><span class="err">”</span>
+<span class="c1">-- Decrease 100%</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DIRECTION"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"STEP_CODE"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_4'>DPT_4</h2>
+<p>This DataPoint Type is commonly used for passing a character.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>0 through 255. 8 bit value representing a character set.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_4</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"A"</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_5'>DPT_5</h2>
+<p>This DataPoint Type is commonly used when passing an 8 bit unsigned value.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>0 through 255. 8 bit unsigned value.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_5</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"127"</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_6'>DPT_6</h2>
+<p>This DataPoint Type is commonly used when passing an 8 bit signed relative value.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>-128 through 127. 8 bit relative value.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_6</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">100</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_7'>DPT_7</h2>
+<p>This DataPoint Type is commonly used when passing a 2 octet unsigned value.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>0 – 65535. 2 octet unsigned value.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_7</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10094</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_8'>DPT_8</h2>
+<p>This DataPoint Type is commonly used when passing a 2 octet unsigned value.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>-32 768 through 32 767. 2 octet signed value.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_8</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10094</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_9'>DPT_9</h2>
+<p>This DataPoint Type is commonly used when a 2-octet float value is passed (e.g. temperature).</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>-671088,64 - 670760,96. 2 octet float value.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_9</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1584</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_10'>DPT_10</h2>
+<p>This DataPoint Type is commonly used when a value representing time (including day of the week) is passed.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>DAY</td>
+<td>0 – 7. 0=No day. 1=Monday</td>
+</tr>
+<tr>
+<td>HOUR</td>
+<td>0 – 23</td>
+</tr>
+<tr>
+<td>MINUTE</td>
+<td>0 – 59</td>
+</tr>
+<tr>
+<td>SECOND</td>
+<td>0 – 59</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_10</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DAY"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"HOUR"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"MINUTE"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"SECOND"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">45</span>
+
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_11'>DPT_11</h2>
+<p>This DataPoint Type is commonly used when a value representing date is passed.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>DAY</td>
+<td>1 through 31</td>
+</tr>
+<tr>
+<td>MONTH</td>
+<td>1 through 12</td>
+</tr>
+<tr>
+<td>YEAR</td>
+<td>0 through 99</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_11</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"YEAR"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"MONTH"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DAY"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">13</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+
+</code></pre></div>
+<h2 id='dpt_12'>DPT_12</h2>
+<p>This DataPoint Type is commonly used when passing a 4 octet unsigned value.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>0 – 4,294,967,295. 4 octet unsigned value.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_12</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+
+</code></pre></div>
+<h2 id='dpt_13'>DPT_13</h2>
+<p>This DataPoint Type is commonly used when passing a 4 octet signed value.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>-2,147,483,648 - 2,147,483,647. 4 octet signed value.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_13</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1000</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_14'>DPT_14</h2>
+<p>This DataPoint Type is commonly used when passing a 4 octet float value.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>num</td>
+<td>-2.14748E009 - +2.14748E009. 4 octet float value.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_14</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">.</span><span class="mf">23658E009</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_15'>DPT_15</h2>
+<p><em>Currently not supported.</em></p>
+
+<h2 id='dpt_16'>DPT_16</h2>
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>14 X TTTTTT (T = Text String)</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_16</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Hello World"</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_17'>DPT_17</h2>
+<p>This DataPoint Type is commonly used for passing a scene number value. The minimum scene number is 0 and the maximum scene number is 63.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>Scene number 0 - 63.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_17</span><span class="err">”</span>
+<span class="c1">-- Scene number</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">32</span>
+
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_18'>DPT_18</h2>
+<p>This DataPoint Type is commonly used for scene control. A scene control can be used to activate or learn the corresponding scene number. The range for scene numbers is from 0 to 63.</p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>Scene number 0 - 63.</td>
+</tr>
+<tr>
+<td>CONTROL</td>
+<td>0 = activate the scene corresponding to the field Scene Number.<br>1 = learn the scene corresponding to the field Scene Number.</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"DATA_POINT_TYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_18</span><span class="err">”</span>
+<span class="c1">-- Scene number</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">32</span>
+<span class="c1">-- Activate scene</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">"CONTROL"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_19'>DPT_19</h2>
+<p>This DataPoint Type is used for passing Date and Time information.</p>
+<h6 id='available-from-knx-routing-gateway-driver-version-44'>Available from KNX Routing Gateway driver version 44.</h6>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>YEAR</td>
+<td>Year in range from 1900 to 2155 or nil if not used</td>
+</tr>
+<tr>
+<td>MONTH</td>
+<td>1 - 12 or nil if date (month and day of month) is not used</td>
+</tr>
+<tr>
+<td>DAY</td>
+<td>1 - 31 or nil if date (month and day of month) is not used</td>
+</tr>
+<tr>
+<td>WEEKDAY</td>
+<td>0 - 7 or nil if day of week is not used</td>
+</tr>
+<tr>
+<td>HOUR</td>
+<td>0 - 24 or nil if time (hours, minutes and seconds) is not used</td>
+</tr>
+<tr>
+<td>MINUTE</td>
+<td>0 - 60 or nil if time (hours, minutes and seconds) is not used</td>
+</tr>
+<tr>
+<td>SECOND</td>
+<td>0 - 60 or nil if time (hours, minutes and seconds) is not used</td>
+</tr>
+<tr>
+<td>WORKING_DAY</td>
+<td>Indicates a working day (0 or 1, nil if not used)</td>
+</tr>
+<tr>
+<td>SUMMER_TIME</td>
+<td>Indicates Standard Summer Time (0 or 1, nil if not used)</td>
+</tr>
+<tr>
+<td>CLOCK_QUALITY</td>
+<td>0 - Clock without an external synchronization signal</td>
+</tr>
+<tr>
+<td></td>
+<td>1 - Clock with an external synchronization signal</td>
+</tr>
+<tr>
+<td></td>
+<td>nil - Clock quality information not used</td>
+</tr>
+<tr>
+<td>FAULT</td>
+<td>Set to 1 if one or more supported fields of the date and time information are corrupted, 0 otherwise</td>
+</tr>
+</tbody></table>
+
+<p><h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">-- Send Tuesday, September 15, 2020, 13:58:10, Standard Summer Time, working day, clock with external synchronization signal:</span></p>
+
+<p><span class="n">SendToKNX</span><span class="p">({</span><span class="n">GROUP_ADDRESS</span> <span class="o">=</span> <span class="s1">&#39;7/0/9&#39;</span><span class="p">,</span> <span class="n">DATA_POINT_TYPE</span> <span class="o">=</span> <span class="s2">&quot;DPT_19&quot;</span><span class="p">,</span>
+    <span class="n">YEAR</span> <span class="o">=</span> <span class="mi">2020</span><span class="p">,</span>
+    <span class="n">MONTH</span> <span class="o">=</span> <span class="mi">9</span><span class="p">,</span>
+    <span class="n">DAY</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span>
+    <span class="n">WEEKDAY</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="n">HOUR</span> <span class="o">=</span> <span class="mi">13</span><span class="p">,</span>
+    <span class="n">MINUTE</span> <span class="o">=</span> <span class="mi">58</span><span class="p">,</span>
+    <span class="n">SECOND</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="n">WORKING_DAY</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="n">SUMMER_TIME</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="n">CLOCK_QUALITY</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">})</span>
+</code></pre></div><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">-- Send year, date, day of week and working day information (Tuesday, September 15, 2020, working day):</span></p>
+
+<p><span class="n">SendToKNX</span><span class="p">({</span><span class="n">GROUP_ADDRESS</span> <span class="o">=</span> <span class="s1">&#39;7/0/9&#39;</span><span class="p">,</span> <span class="n">DATA_POINT_TYPE</span> <span class="o">=</span> <span class="s2">&quot;DPT_19&quot;</span><span class="p">,</span>
+    <span class="n">YEAR</span> <span class="o">=</span> <span class="mi">2020</span><span class="p">,</span>
+    <span class="n">MONTH</span> <span class="o">=</span> <span class="mi">9</span><span class="p">,</span>
+    <span class="n">DAY</span> <span class="o">=</span> <span class="mi">15</span><span class="p">,</span>
+    <span class="n">WEEKDAY</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="n">WORKING_DAY</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+<span class="p">})</span>
+</code></pre></div>
+<h2 id='dpt_5_001'>DPT_5_001</h2>
+<p>This DataPoint Type is used for passing a percentage value (0% - 100%).</p></p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>VALUE</td>
+<td>Percentage 0% - 100%.</td>
+</tr>
+</tbody></table>
+
+<p><h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;GROUP_ADDRESS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;DATA_POINT_TYPE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_5_001</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;VALUE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_232'>DPT_232</h2>
+<p>This DataPoint Type is used for passing a 3-byte RGB color.</p></p>
+
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>R</td>
+<td>Red value 0 - 255</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Green value 0 - 255</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Blue value 0 - 255</td>
+</tr>
+</tbody></table>
+
+<p><h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;GROUP_ADDRESS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;DATA_POINT_TYPE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_5_001</span><span class="err">”</span>
+<span class="c1">-- Turquoise RGB color</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;R&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">64</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;G&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">224</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;B&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">208</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_242_600'>DPT_242_600</h2>
+<p>This DataPoint Type is used for passing xyY color information.</p>
+<h6 id='available-from-knx-routing-gateway-driver-version-44'>Available from KNX Routing Gateway driver version 44.</h6>
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>X</td>
+<td>x-coordinate of the color information (0 to 6553) or nil if only brightness information is passed</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>y-coordinate of the color information (0 to 6553) or nil if only brightness information is passed</td>
+</tr>
+<tr>
+<td>BRIGHTNESS</td>
+<td>Brightness of the color (0% - 100%) or nil if only x and y values passed</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">-- Send x and y coordinates and brightness information:</span></p>
+
+<p><span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;GROUP_ADDRESS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;DATA_POINT_TYPE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_242_600</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;X&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;Y&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">20000</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;BRIGHTNESS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">-- Send only x and y color coordinates:</span></p>
+
+<p><span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;GROUP_ADDRESS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;DATA_POINT_TYPE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_242_600</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;X&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;Y&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">20000</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;BRIGHTNESS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">-- Send only brightness information:</span></p>
+
+<p><span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;GROUP_ADDRESS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;DATA_POINT_TYPE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_242_600</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;X&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;Y&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;BRIGHTNESS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div>
+<h2 id='dpt_251_600'>DPT_251_600</h2>
+<p>This DataPoint Type is used for passing RGBW color information.</p>
+<h6 id='available-from-knx-routing-gateway-driver-version-44'>Available from KNX Routing Gateway driver version 44.</h6>
+<table><thead>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>R</td>
+<td>Red color level (0% to 100%) or nil if not used</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Green color level (0% to 100%) or nil if not used</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Blue color level (0% to 100%) or nil if not used</td>
+</tr>
+<tr>
+<td>W</td>
+<td>White color level (0% to 100%) or nil if not used</td>
+</tr>
+</tbody></table>
+<h3 id='example'>Example</h3><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">-- Send full RGBW color:</span></p>
+
+<p><span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;GROUP_ADDRESS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;DATA_POINT_TYPE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_251_600</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;R&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;G&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">75</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;B&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;W&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight lua tab-lua"><code><span class="c1">-- Send only Red and White color levels:</span></p>
+
+<p><span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;GROUP_ADDRESS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;DATA_POINT_TYPE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="err">“</span><span class="n">DPT_251_600</span><span class="err">”</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;R&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;G&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;B&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="n">tParams</span><span class="p">[</span><span class="s2">&quot;W&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">SEND_TO_KNX</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
+</code></pre></div></p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="lua">lua</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
