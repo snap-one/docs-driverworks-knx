@@ -1,6 +1,6 @@
 # KNX Support Overview
 
-Control4 supports integration with devices using the standardized KNX control network topology. Note that the scope of support of this integration only includes products labeled with the KNX trademark. These devices have been tested for KNX protocol support as well as correct data coding by accredited third party test labs using KNX standardized Data types.
+Control4 supports integration with devices using standardized KNX control network topology. Note that the scope of support of this integration only includes products labeled with the KNX trademark. These devices have been tested for KNX protocol support as well as correct data coding by accredited third party test labs using KNX standardized Data types.
 The KNX protocol supports a wide variety of home automation applications including:
 
 - Lighting control
