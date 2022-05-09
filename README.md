@@ -10,3 +10,4 @@ The output is regenerated whenever a Markdown file changes on the `master` branc
 [1]: https://control4.github.io/docs-driverworks-knx/#introduction/##KNX_Support_Overview
 
 [image-1]: https://github.com/control4/docs-driverworks-knx/workflows/Build%20and%20deploy/badge.svg
+
