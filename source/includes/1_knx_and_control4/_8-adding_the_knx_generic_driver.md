@@ -87,4 +87,4 @@ Through the use of variable, it is possible to base programming off sending data
 
 In the example above, when data is sent to KNX through Channel 1 we will toggle Light 3 in the Theater Room through the use of a Command. It is worth noting that when using variable based programming in conjunction with the “Data Received from KNX” generic event the value that will be used by the variable is that actual value received from KNX as opposed to the value configured for the channel in the Properties page. Conditionals and Loops are also available as programming options.
 
-[1]:	https://control4.github.io/docs-driverworks-draft/#datapoint-type-overview
+[1]:	https://snap-one.github.io/docs-driverworks-draft/#datapoint-type-overview
