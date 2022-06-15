@@ -807,7 +807,7 @@ Once the Generic Driver has been added to your project you can open the driver�
 
 <p><strong>Channel # Name:</strong> This field allows you to provide a name or a description of the Channel.</p>
 
-<p><strong>Channel # Data Point Type</strong> This field supports the assignment of the desired KNX Data Point Type (DPT) value. DPTs currently supported include all DPTs listed in the <a href="https://control4.github.io/docs-driverworks-draft/#datapoint-type-overview">API and Datapoint Types Guide</a>.</p>
+<p><strong>Channel # Data Point Type</strong> This field supports the assignment of the desired KNX Data Point Type (DPT) value. DPTs currently supported include all DPTs listed in the <a href="https://snap-one.github.io/docs-driverworks-draft/#datapoint-type-overview">API and Datapoint Types Guide</a>.</p>
 
 <p><strong>Channel # Address</strong> – This field contains the device’s KNX group address.</p>
 
@@ -1023,7 +1023,7 @@ If you open the KNX Generic Driver under Programming, you will see all of the va
 <span class="n">C4</span><span class="p">:</span><span class="n">SendToProxy</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="err">”</span><span class="n">CLEAR_GROUP_ITEM</span><span class="err">”</span><span class="p">,</span> <span class="n">tParams</span><span class="p">)</span>
 </code></pre></div>
 <h2 id='data_from_knx'>DATA_FROM_KNX</h2>
-<p>This command is sent from the KNX network driver (KNX Routing Gateway or KNX Network) to a KNX driver when data is received from KNX for a registered Group Address which was previously registered with a <a href="https://control4.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
+<p>This command is sent from the KNX network driver (KNX Routing Gateway or KNX Network) to a KNX driver when data is received from KNX for a registered Group Address which was previously registered with a <a href="https://snap-one.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
 <h6 id='available-from-8-0'>Available from 8.0</h6><h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -1041,9 +1041,9 @@ If you open the KNX Generic Driver under Programming, you will see all of the va
 </tr>
 </tbody></table>
 
-<p>Note that all other parameters representing data from the KNX are dependent on the DPT being used as specified in the <a href="https://control4.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
+<p>Note that all other parameters representing data from the KNX are dependent on the DPT being used as specified in the <a href="https://snap-one.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
 <h3 id='example'>Example</h3>
-<p>To the right is an example of a <code>DATA_FROM_KNX</code> handler of the KNX Switch driver. The driver previously registered a Group Address specified in the Status Address property with the <a href="https://control4.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
+<p>To the right is an example of a <code>DATA_FROM_KNX</code> handler of the KNX Switch driver. The driver previously registered a Group Address specified in the Status Address property with the <a href="https://snap-one.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
 <div class="highlight"><pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nc">EX_CMD</span><span class="p">.</span><span class="nf">DATA_FROM_KNX</span><span class="p">(</span><span class="n">tParams</span><span class="p">)</span>
   <span class="kd">local</span> <span class="n">groupID</span> <span class="o">=</span> <span class="n">trim</span><span class="p">(</span><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">])</span>
   <span class="kd">local</span> <span class="n">value</span> <span class="o">=</span> <span class="nb">tonumber</span><span class="p">(</span><span class="n">tParams</span><span class="p">[</span><span class="s2">"VALUE"</span><span class="p">])</span>
@@ -1106,7 +1106,7 @@ If you open the KNX Generic Driver under Programming, you will see all of the va
 <span class="k">end</span>
 </code></pre></div>
 <h2 id='knx_read_request'>KNX_READ_REQUEST</h2>
-<p>This command is sent from the KNX network driver (KNX Routing Gateway or KNX Network) to a KNX driver when a read request is received for a registered Group Address which was previously registered with a <a href="https://control4.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
+<p>This command is sent from the KNX network driver (KNX Routing Gateway or KNX Network) to a KNX driver when a read request is received for a registered Group Address which was previously registered with a <a href="https://snap-one.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
 <h6 id='available-from-8-0'>Available from 8.0</h6><h3 id='parameters'>Parameters</h3>
 <table><thead>
 <tr>
@@ -1120,7 +1120,7 @@ If you open the KNX Generic Driver under Programming, you will see all of the va
 </tr>
 </tbody></table>
 <h3 id='example'>Example</h3>
-<p>To the right is an example of a <code>KNX_READ_REQUEST</code> handler of the KNX Generic driver. The driver previously registered a Group Address specified in the Status Address property with the <a href="https://control4.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
+<p>To the right is an example of a <code>KNX_READ_REQUEST</code> handler of the KNX Generic driver. The driver previously registered a Group Address specified in the Status Address property with the <a href="https://snap-one.github.io/docs-driverworks-draft/#add_group_item">AddGroupItem</a> command.</p>
 <div class="highlight"><pre class="highlight lua tab-lua"><code><span class="k">function</span> <span class="nc">EX_CMD</span><span class="p">.</span><span class="nf">KNX_READ_REQUEST</span><span class="p">(</span><span class="n">tParams</span><span class="p">)</span>
   <span class="kd">local</span> <span class="n">groupID</span> <span class="o">=</span> <span class="n">trim</span><span class="p">(</span><span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">])</span>
 
@@ -1236,7 +1236,7 @@ If you open the KNX Generic Driver under Programming, you will see all of the va
 </tr>
 </tbody></table>
 <h3 id='example'>Example</h3>
-<p>Note that in the example to the right we are changing “Channel 1 Address” Datapoint Type to <a href="https://control4.github.io/docs-driverworks-draft/#dpt_3">DPT_3</a>.</p>
+<p>Note that in the example to the right we are changing “Channel 1 Address” Datapoint Type to <a href="https://snap-one.github.io/docs-driverworks-draft/#dpt_3">DPT_3</a>.</p>
 <div class="highlight"><pre class="highlight lua tab-lua"><code><span class="kd">local</span> <span class="n">tParams</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">tParams</span><span class="p">[</span><span class="s2">"GROUP_ADDRESS"</span><span class="p">]</span> <span class="o">=</span> <span class="n">Properties</span><span class="p">[</span><span class="err">“</span><span class="n">Channel</span> <span class="mi">1</span> <span class="n">Address</span><span class="err">”</span><span class="p">]</span>
 <span class="n">tParams</span><span class="p">[</span><span class="s2">"DEVICE_ID"</span><span class="p">]</span> <span class="o">=</span> <span class="n">C4</span><span class="p">:</span><span class="n">GetDeviceID</span><span class="p">()</span>
